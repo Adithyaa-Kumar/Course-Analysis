@@ -1,0 +1,7 @@
+{
+  "enviromentVariables": {
+    "NODE_ENV": "production",
+    "PORT": 5000,
+    "CORS_ORIGIN": "*"
+  }
+}

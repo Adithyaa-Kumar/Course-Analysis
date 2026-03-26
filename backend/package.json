@@ -1,0 +1,17 @@
+{
+  "name": "course-analytics-backend",
+  "version": "1.0.0",
+  "description": "Course Attempt Analysis System - Cloudflare Workers",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev src/index.js",
+    "deploy": "wrangler deploy src/index.js",
+    "build": "npm run build"
+  },
+  "dependencies": {
+    "hono": "^3.11.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.45.0"
+  }
+}

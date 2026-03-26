@@ -1,0 +1,37 @@
+name = "course-analytics"
+type = "javascript"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Development configuration
+[env.development]
+workers_dev = true
+
+# Production configuration  
+[env.production]
+route = "api.example.com/api*"
+zone_id = ""
+
+# D1 Database Binding
+[[d1_databases]]
+binding = "DB"
+database_name = "course-analytics-new"
+database_id = "089dd3e3-47e4-4c84-a6a1-5678b1704c8a"
+
+# KV Namespace for caching (optional)
+# [[kv_namespaces]]
+# binding = "CACHE"
+# id = ""
+# preview_id = ""
+
+# Environment variables
+[env.production.env]
+ENVIRONMENT = "production"
+
+[env.development.env]
+ENVIRONMENT = "development"
